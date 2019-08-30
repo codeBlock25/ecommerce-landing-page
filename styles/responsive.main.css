@@ -1,0 +1,179 @@
+@media (min-width: 750px) {
+    header ul {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        min-width: 350px;
+        height: 100%;
+        display: flex;
+        list-style: none;
+    }
+    header ul li {
+        width: 30%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        line-height: 55px;
+        font-family: 'Courgette', cursive;
+        text-transform: capitalize;
+        cursor: pointer;
+        letter-spacing: normal;
+        text-shadow: 0 0 0;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    header ul li:hover {
+        letter-spacing: 2px;
+        text-shadow: 0 0 2px grey;
+    }
+}
+@media (max-width: 749px) {
+    header .cover {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.79);
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        z-index: -2;
+    }
+    header .nav_btn {
+        position: fixed;
+        top: 10px;
+        left: 7px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        border-radius: 50%;
+        transform: scale(1);
+        background-color: transparent;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        cursor: pointer;
+    }
+    header .nav_btn:hover {
+        background-color: #e1e2e2;
+    }
+    header .nav_btn:active {
+        transform: scale(.8)
+    }
+    header .nav_btn span {
+        width: 60%;
+        height: 4px;
+        display: block;
+        border-radius: 9px;
+        background: #141414;
+        -webkit-transition: background .4s;
+        -moz-transition: background .4s;
+        -o-transition: background .4s;
+        transition: background .4s;
+        cursor: pointer;
+    }
+    header .nav_btn span:nth-child(1) {
+        width: 80%;
+        transform: translate(4px,13px)
+    }
+    header .nav_btn span:nth-child(2) {
+        transform: translate(4px,20px)
+    }
+    header ul {
+        position: fixed;
+        top: 0;
+        left: -1000px;
+        width: 270px;
+        height: 100vh;
+        display: block;
+        background: whitesmoke;
+        z-index: -1;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    header ul.open {
+        left: 0;
+    }
+    header ul li {
+        width: 100%;
+        height: 40px;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        margin: 2px 0;
+        font-family: 'Courgette', cursive;
+        text-transform: capitalize;
+        cursor: pointer;
+        letter-spacing: normal;
+        text-shadow: 0 0 0;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    header ul li:nth-child(1) {
+        margin: 100px 0 4px 0;
+    }
+    header ul li:hover {
+        letter-spacing: 2px;
+        text-shadow: 0 0 2px grey;
+    }
+    header form {
+        height: 100px;
+    }
+    header form input {
+        bottom: 100%
+    }
+}
+@media (max-width:950px) {
+
+    section .content.txt h2 {
+        font-size: 40px;
+        height: 30%;
+    }
+
+    section .content.txt p {
+        font-size:  20px;
+        height: 10%;
+    }
+    section .content.image .carousel .carousel_btn  {
+        left: 45%;
+    }
+}
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+    section .content {
+        width: 100%;
+        height: 60%;
+        min-height: 350px;
+    }
+    section .content.image {
+        order: 1;
+    }
+    section .content.image .carousel {
+        min-height: 350px;
+        max-height: 450px;
+        padding: 50px 0 0 0;
+    }
+    section .content.image .carousel .carousel_btn span {
+        background-color: #859096;
+    }
+    section .content.txt {
+        order: 2;
+    }
+    section .content.txt h2 {
+        margin: 10% auto 0 auto;
+        color: #0f9fe9;
+    }
+}
